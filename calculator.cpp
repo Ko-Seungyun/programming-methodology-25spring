@@ -32,10 +32,8 @@ int Calculator::mul(int a, int b) {
     int result = a * b;
     if (result / b != a)
         throw std::overflow_error("Overflow");
-    else
-        return a * b;
-
-    return -1;
+    
+    return a * b;
 }
 
 int Calculator::div(int a, int b) {
